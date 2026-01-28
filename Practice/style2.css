@@ -1,0 +1,23 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #ccc;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #8e8c8c;
+    color: white;
+
+    a{
+        text-decoration: none;
+        color: white;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&family=Story+Script&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap');
+
+
+
+body{
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(230, 43, 211),rgb(0, 0, 0));
+    font-family: Story Script, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.head{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main{
+    margin-top: 59px;
+}
+
+.form{
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 25px;
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: url(/Tasks/media/dbg.jpg);
+    background-size: cover;
+
+    label{
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+    }
+
+    input{
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        background-color: transparent;
+        color: white;
+    }
+
+    button{
+        
+        color: white;
+        padding: 10px;
+        border-radius: 3px;
+        border: none;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+}
+
+
+.done{
+    background-color: rgb(230, 43, 211);
+}
+.clear{
+    background-color: rgb(0, 0, 0);
+}
+
+footer{
+    text-align: center;
+    color: white;
+    margin-top: 70px;
+    font-size: 14px;
+    align-items: end;
+}

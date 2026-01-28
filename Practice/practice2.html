@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 2</title>
+    <link rel="shortcut icon" href="https://playinglearning.com/wp-content/uploads/kindergarten-handwriting-practice-blank-sheet_guideline.png" type="image/x-icon">
+    <link rel="stylesheet" href="style2.css">
+
+    <style>
+        /* class selector */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* group selector */
+        p, a, h5{
+            font-family: Arial, sans-serif;
+            color: blue;
+        }
+
+        .para, .anch, .heading {
+            color: rgb(182, 47, 255);
+        }
+
+        /* attribute */
+        a[href$=".com"]{
+            color: rgb(111, 83, 31);
+        }
+        
+        a[title]{
+            font-weight: bold;
+        }
+
+        /* combinator */
+        /* Descending */
+        div p{
+            font-size: 18px;
+        }
+
+        /* Child */
+        div > h6{
+            border: 2px solid blue;
+            padding: 5px;
+        }
+
+        /* Adjacent Sibling */
+        div + p{
+            color: red;
+        }
+
+        /* General Sibling */
+        div ~ p{
+            font-style: italic;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav class="head">
+            <h2>Practice 2</h2>
+            <a href="#class">Class Selector</a>
+            <a href="#group">Group Selector</a>
+            <a href="#attribute">Attribute Selector</a>
+            <a href="#combinator">Combinator</a>
+            <button>Sign Up</button>
+        </nav>
+    </header>
+    <main>
+        <!-- Class Selector -->
+         <class id="class">
+            <div class="select">
+            <h2>Class Selector</h2>
+            <p class="highlight">This paragraph is highlighted using a class selector.</
+         </div>
+         </class>
+        <!-- Group Selector -->
+            <div id="group">
+                <h2>Group Selector</h2>
+                <p>This is the first paragraph.</p>
+                <a>This is the second paragraph.</a>
+                <h5>This is the third paragraph.</h5>
+                <p class="para">This is the first paragraph.</p>
+                <a class="anch">This is the second paragraph.</a>
+                <h5 class="heading">This is the third paragraph.</h5>
+            </div>
+        <!-- Attribute Selector -->
+        <div id="attribute">
+            <h2>Attribute Selector</h2>
+            <a href="https://www.example.com">Example Link 1</a>
+            <a href="https://www.test.com">Test Link 2</a>
+            <a title="Special Link" href="https://www.special.com">Special Link 3</a>
+        </div>
+        <!-- Combinator -->
+        <div id="combinator">
+            <!-- Descending -->
+            <h2>Descending</h2>
+            <div class="container">
+                <p>This paragraph is inside a div with class "container".</p>
+            </div>
+            <!-- Child -->
+            <h2>Child</h2>
+            <div class="parent">
+                <h6>This paragraph is a direct child of the div with class "parent".</h6>
+            </div>
+            <!-- Adjacent Sibling -->
+             <div>
+                <h2>Adjacent Sibling</h2>
+            <p>This paragraph is an adjacent sibling to the div with class "parent".</p>
+            <h4>cbjjdbfo</h4>
+             </div>
+            <!-- General Sibling -->
+            <div>
+                <h2>General Sibling</h2>
+                <p>This paragraph is a general sibling to the div with class "container".</p>
+            </div>    
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 Practice Page</p>
+    </footer>
+</body>
+</html>
