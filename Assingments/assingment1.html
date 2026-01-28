@@ -4,8 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Layout</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(185, 181, 181);
+            height: 100vh;
+            width: 100vw;
+        }
+        .container{
+            display: grid;
+            gap: 1rem;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: 1fr, 1fr, 1fr;
+            height: 100%;
+            width: 100%;
+        }
+        .header{
+            background-color: red;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            height: 70px;
+        }
+        .sidebar{
+            background-color: blue;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            height: 565px;
+        }
+        .section1{
+            background-color: green;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        .section2{
+            background-color: yellow;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+        .section3{
+            background-color: orange;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        .section4{
+            background-color: purple;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+        .footer{
+            background-color: pink;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            height: 60px;
+            
+        }
+        .item{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="item header">Header</div>
+        <div class="item sidebar">Sidebar</div>
+        <div class="item section1">Section 1</div>
+        <div class="item section2">Section 2</div>
+        <div class="item section3">Section 3</div>
+        <div class="item section4">Section 4</div>
+        <div class="item footer">Footer</div>
+    </div>    
 </body>
 </html>
