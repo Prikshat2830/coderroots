@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout (Responsive)</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: blueviolet;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container{
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: 1fr, 1fr, 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            height: 100%;
+            width: 100%;
+        }
+
+        .header{
+            background-color: brown;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            height: 70px;
+            width: 1520px;
+        }
+        .sidebar{
+            background-color: coral;
+            grid-row-start: 2;
+            grid-row-end: 6;
+            height: 930px;
+            width: 300px;
+        }
+        .section1{
+            background-color: darkcyan;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            width: 1190px;
+        }
+        .section2{
+            background-color: darkgoldenrod;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            width: 1190px;
+        }
+        .section3{
+            background-color: darkgreen;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            width: 1190px;
+        }
+        .section4{
+            background-color: rgb(59, 183, 59);
+            grid-column-start: 2;
+            grid-column-end: 4;
+            width: 1190px;
+        }
+        .footer{
+            background-color: aqua;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            width: 1520px;
+        }
+        .item{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* css for items */
+
+        a{
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+
+        .section1, .section2, .section3, .section4{
+            flex-direction: column;
+        }
+
+        .sidebar{
+
+            input{
+                background-color: rgb(212, 179, 96);
+                width: 200px;
+                height: 35px;
+                border: none;
+                border-radius: 5px;
+                margin-top: 10px;
+                margin-left: 15px;
+                color: black;
+                
+            }
+
+            button{
+                background-color: blueviolet;
+                color: white;
+                height: 35px;
+                width: 65px;
+                border: none;
+                border-radius: 10px;
+            }
+        }
+
+        /* responsive */
+
+        @media (max-width:768px){
+            .container{
+                height: 100%;
+                width: 100%;
+            }
+            .sidebar{
+                height: 1150px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item header links">
+            <a href="#sec1">Home</a>
+            <a href="#sec2">About</a>
+            <a href="#sec3">Skills</a>
+            <a href="#sec4">Qualifications</a>
+        </div>
+        <div class="sidebar search">
+            <input type="search" placeholder="Search here ....">
+            <button type="submit">Search</button>
+        </div>
+        <div class="item section1" id="sec1">
+            <h1>Home</h1>
+            <p>This Is home section.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, omnis, molestias nobis praesentium, porro possimus nihil ut unde quod temporibus consectetur eveniet! Autem nisi et, veniam necessitatibus similique saepe iusto! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, in voluptates esse nesciunt rem fugit doloribus qui reiciendis, alias maxime quibusdam maiores omnis corrupti. Sit error sint in omnis minus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptatibus aut vel, fuga beatae ut harum placeat nemo possimus ab laboriosam iusto consectetur obcaecati vitae hic maiores officia. Id, laudantium. Lorem ipsum dolor sit, amet consectetur adipisicing elit. At id dolor hic dolores reiciendis, ratione rerum laborum facilis aperiam nesciunt! Ut quo ipsum exercitationem repellendus saepe veritatis, in velit error. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur amet hic eligendi perspiciatis asperiores eveniet, facilis facere iusto assumenda, illo suscipit, nam dolorum obcaecati tempora corrupti. Architecto accusamus beatae impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam architecto impedit autem, aspernatur, sed ab tenetur, quae ex quibusdam ratione vitae explicabo nesciunt non animi fugiat. Veniam minus a ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dignissimos quo eius aut deserunt culpa molestiae! Nostrum distinctio natus enim nobis ipsa doloremque dolores rem voluptates quam ratione, sunt itaque?</p>
+        </div>
+        <div class="item section2" id="sec2">
+            <h2>About</h2>
+            <p>This is About section.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, omnis, molestias nobis praesentium, porro possimus nihil ut unde quod temporibus consectetur eveniet! Autem nisi et, veniam necessitatibus similique saepe iusto! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, in voluptates esse nesciunt rem fugit doloribus qui reiciendis, alias maxime quibusdam maiores omnis corrupti. Sit error sint in omnis minus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptatibus aut vel, fuga beatae ut harum placeat nemo possimus ab laboriosam iusto consectetur obcaecati vitae hic maiores officia. Id, laudantium. Lorem ipsum dolor sit, amet consectetur adipisicing elit. At id dolor hic dolores reiciendis, ratione rerum laborum facilis aperiam nesciunt! Ut quo ipsum exercitationem repellendus saepe veritatis, in velit error. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur amet hic eligendi perspiciatis asperiores eveniet, facilis facere iusto assumenda, illo suscipit, nam dolorum obcaecati tempora corrupti. Architecto accusamus beatae impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam architecto impedit autem, aspernatur, sed ab tenetur, quae ex quibusdam ratione vitae explicabo nesciunt non animi fugiat. Veniam minus a ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dignissimos quo eius aut deserunt culpa molestiae! Nostrum distinctio natus enim nobis ipsa doloremque dolores rem voluptates quam ratione, sunt itaque?</p>
+        </div>
+        <div class="item section3" id="sec3">
+            <h2>Skills</h2>
+            <p>This is Skills section.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, omnis, molestias nobis praesentium, porro possimus nihil ut unde quod temporibus consectetur eveniet! Autem nisi et, veniam necessitatibus similique saepe iusto! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, in voluptates esse nesciunt rem fugit doloribus qui reiciendis, alias maxime quibusdam maiores omnis corrupti. Sit error sint in omnis minus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptatibus aut vel, fuga beatae ut harum placeat nemo possimus ab laboriosam iusto consectetur obcaecati vitae hic maiores officia. Id, laudantium. Lorem ipsum dolor sit, amet consectetur adipisicing elit. At id dolor hic dolores reiciendis, ratione rerum laborum facilis aperiam nesciunt! Ut quo ipsum exercitationem repellendus saepe veritatis, in velit error. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur amet hic eligendi perspiciatis asperiores eveniet, facilis facere iusto assumenda, illo suscipit, nam dolorum obcaecati tempora corrupti. Architecto accusamus beatae impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam architecto impedit autem, aspernatur, sed ab tenetur, quae ex quibusdam ratione vitae explicabo nesciunt non animi fugiat. Veniam minus a ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dignissimos quo eius aut deserunt culpa molestiae! Nostrum distinctio natus enim nobis ipsa doloremque dolores rem voluptates quam ratione, sunt itaque?</p>
+        </div>
+        <div class="item section4" id="sec4">
+            <h2>Qualifications</h2>
+            <p>This is Qualifications section.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, omnis, molestias nobis praesentium, porro possimus nihil ut unde quod temporibus consectetur eveniet! Autem nisi et, veniam necessitatibus similique saepe iusto! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, in voluptates esse nesciunt rem fugit doloribus qui reiciendis, alias maxime quibusdam maiores omnis corrupti. Sit error sint in omnis minus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptatibus aut vel, fuga beatae ut harum placeat nemo possimus ab laboriosam iusto consectetur obcaecati vitae hic maiores officia. Id, laudantium. Lorem ipsum dolor sit, amet consectetur adipisicing elit. At id dolor hic dolores reiciendis, ratione rerum laborum facilis aperiam nesciunt! Ut quo ipsum exercitationem repellendus saepe veritatis, in velit error. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur amet hic eligendi perspiciatis asperiores eveniet, facilis facere iusto assumenda, illo suscipit, nam dolorum obcaecati tempora corrupti. Architecto accusamus beatae impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam architecto impedit autem, aspernatur, sed ab tenetur, quae ex quibusdam ratione vitae explicabo nesciunt non animi fugiat. Veniam minus a ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dignissimos quo eius aut deserunt culpa molestiae! Nostrum distinctio natus enim nobis ipsa doloremque dolores rem voluptates quam ratione, sunt itaque?</p>
+        </div>
+        <div class="item footer">&copy; 2026 Copyright.</div>
+    </div>
+</body>
+</html>
