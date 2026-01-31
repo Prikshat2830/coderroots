@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{
+            color: red;
+        }
+        a:visited{
+            color: green;
+        }
+        a:hover{
+            background-color: orange;
+            transition: ease-in 0.4s;
+        }
+        a:active{
+            color: darkblue;
+        }
+        input:focus{
+            background-color: red;
+            color: white;
+        }
+        li:first-child{
+            color: bisque;
+        }
+        li:last-child{
+            border: 2px solid green;
+        }
+        li:nth-child(2){
+            color: blue;
+        }
+        li:nth-child(even){
+            color: yellow;
+        }
+        li:nth-child(odd){
+            color: aqua;
+        }
+        li:nth-child(2n+1){
+            color: orange;
+        }
+
+        h1::first-letter{
+            font-size: 70px;
+            font-weight: lighter;
+            text-transform: lowercase
+        }
+        p::first-line{
+            background-color: blue;
+        }
+        p::before{
+            content: "Hello coder roots. ";
+        }
+        p::after{
+            content: "Hello coder roots.";
+        }
+        ::selection{
+            background-color: yellow;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com">Google</a>
+    <input type="text" name="" id="" placeholder="Enter Your Name">
+    <ol>
+        <li>Ram</li>
+        <li>Shyam</li>
+        <li>Mohan</li>
+        <li>Naman</li>
+        <li>Kartik</li>
+    </ol>
+    <h1>Hello coder roots</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ipsum nemo, nesciunt ipsa fugit placeat ducimus magni voluptates adipisci tempora quia dolore, corrupti laboriosam. Eos, at laboriosam. Deserunt, similique fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas voluptatibus sunt quia tempore velit fuga repellendus aspernatur fugiat a illum nemo consequatur, odit sequi. Vel pariatur hic qui numquam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, praesentium neque. Atque veniam quam ullam eos nisi autem reiciendis. Perferendis accusantium iste natus nemo. Incidunt qui rem maxime officia amet?</p>
+</body>
+</html>
