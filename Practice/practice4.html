@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 4</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            background-color: blueviolet;
+            height: 100vh;
+            width: 100vw;
+        }
+        .container{
+            display: flex;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        .item{
+            height: 150px;
+            width: 150px;
+            border: 5px solid red;
+            background-color: antiquewhite;
+        }
+
+        #cont1:hover{
+            transform: scaleX(2);
+            transition: ease-in-out 0.5s;
+        }
+        #cont2:hover{
+            transform: scaleY(2);
+            transition: ease-in-out 0.5s;
+        }
+        #cont3:hover{
+            transform: scale(2);
+            transition: ease-in-out 0.5s;
+        }
+        #cont4:hover{
+            transform: translateX(50px);
+            transition: ease-in-out 0.5s;
+        }
+        #cont5:hover{
+            transform: translateY(50px);
+            transition: ease-in-out 0.5s;
+        }
+        #cont6:hover{
+            transform: perspective(500px) translateZ(100px);
+            transition: ease-in-out 0.5s;
+        }
+        #cont7:hover{
+            transform: rotateX(20deg);
+            transition: ease-in-out 0.5s;
+        }
+        #cont8:hover{
+            transform: rotateY(30deg);
+            transition: ease-in-out 0.5s;
+        }
+        #cont9:hover{
+            transform: rotateZ(50deg);
+            transition: ease-in-out 0.5s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="cont1">scalex</div>
+        <div class="item" id="cont2">scaley</div>
+        <div class="item" id="cont3">scale</div>
+        <div class="item" id="cont4">translatex</div>
+        <div class="item" id="cont5">translatey</div>
+        <div class="item" id="cont6">translatez</div>
+        <div class="item" id="cont7">rotatex</div>
+        <div class="item" id="cont8">rotatey</div>
+        <div class="item" id="cont9">rotatez</div>
+    </div>
+</body>
+</html>
