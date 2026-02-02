@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+        .container{
+            background-color: bisque;
+            height: 200px;
+            width: 200px;
+            /* transition: width;
+            transition-delay: 1s;
+            transition-duration: 5s;
+            transition-property: all;
+            transition-timing-function: ease-in-out; */
+            transition: width 5s ease;
+        }
+
+        .container:hover{
+            width: 600px;
+        }
+        .heading{
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Hello coder roots</h1>
+    </div>
+</body>
+</html>

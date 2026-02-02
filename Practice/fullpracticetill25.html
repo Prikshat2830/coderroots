@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Till 2/2/26</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: bisque;
+        }
+        .intro{
+            background-color: aqua;
+            height: 100%;
+            width: 100%;
+        }
+        .list{
+            background-color: blue;
+            height: 100%;
+            width: 100%;
+        }
+        .table{
+            background-color: blueviolet;
+            height: 100%;
+            width: 100%;
+        }
+        .form{
+            background-color: brown;
+            height: 100%;
+            width: 100%;
+        }
+
+        /* flexbox */
+        .flexbox{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* height: 200px; */
+            height: 100%;
+            width: 100%;
+        }
+        .cont1{
+            background-color: blueviolet;
+            height: 50px;
+            width: 50px;
+        }
+
+        .cont2{
+            background-color: rgb(226, 73, 43);
+            height: 50px;
+            width: 50px;
+        }
+        .cont3{
+            background-color: rgb(189, 226, 43);
+            height: 50px;
+            width: 50px;
+        }
+        .cont4{
+            background-color: rgb(43, 226, 43);
+            height: 50px;
+            width: 50px;
+        }
+        .cont5{
+            background-color: rgb(43, 211, 226);
+            height: 50px;
+            width: 50px;
+        }
+        .cont6{
+            background-color: rgb(226, 43, 92);
+            height: 50px;
+            width: 50px;
+        }
+
+        /* grid */
+        .grid{
+            display: grid;
+            justify-content: center;
+            gap: 1rem;
+            grid-template-columns: 1fr,1fr,1fr;
+            grid-template-rows: repeat(3,1fr);
+            height: 100%;
+            width: 100%;
+        }
+        .conta1{
+            background-color: blueviolet;
+            height: 50px;
+            width: 50px;
+        }
+
+        .conta2{
+            background-color: rgb(226, 73, 43);
+            height: 50px;
+            width: 50px;
+        }
+        .conta3{
+            background-color: rgb(189, 226, 43);
+            height: 50px;
+            width: 50px;
+        }
+        .conta4{
+            background-color: rgb(43, 226, 43);
+            height: 50px;
+            width: 50px;
+        }
+        .conta5{
+            background-color: rgb(43, 211, 226);
+            height: 50px;
+            width: 50px;
+        }
+        .conta6{
+            background-color: rgb(226, 43, 92);
+            height: 50px;
+            width: 50px;
+        }
+
+        /* transform and transition */
+        #item{
+            background-color: blueviolet;
+            color: red;
+            border: 5px solid yellow;
+            height: 100px;
+            width: 100px;
+        }
+        .transform{
+            display: flex;
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contain1{
+            transition: transform 1s ease;
+        }
+        .contain2{
+            transition: transform 1s ease;
+        }
+        .contain3{
+            transition: transform 1s ease;
+        }
+        .contain4{
+            transition: transform 1s ease;
+        }
+        .contain5{
+            transition: transform 1s ease;
+        }
+        .contain6{
+            transition: transform 1s ease;
+        }
+        .contain7{
+            transition: transform 1s ease;
+        }
+        .contain8{
+            transition: transform 1s ease;
+        }
+        .contain9{
+            transition: transform 1s ease;
+        }
+
+        /* hover */
+        .contain1:hover{
+            transform: translateX(50px);
+        }
+        .contain2:hover{
+            transform: translateY(50px);
+        }
+        .contain3:hover{
+            transform: perspective(500px) translateZ(100px);
+        }
+        .contain4:hover{
+            transform: scaleX(2);
+        }
+        .contain5:hover{
+            transform: scaleY(2);
+        }
+        .contain6:hover{
+            transform: scale(2);
+        }
+        .contain7:hover{
+            transform: rotateX(30deg);
+        }
+        .contain8:hover{
+            transform: rotateY(30deg);
+        }
+        .contain9:hover{
+            transform: rotateZ(45deg);
+        }
+
+        /* media */
+        @media (max-width:"1024px"){
+            .intro, .list, .form, .table,.flexbox,.grid{
+                height: 100%;
+            width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="intro">
+        <!-- heading -->
+        <h1>Hello</h1>
+        <h2>Hello</h2>
+        <h3>Hello</h3>
+        <h4>Hello</h4>
+        <h5>Hello</h5>
+        <h6>Hello</h6>
+        <!-- Paragraph and more -->
+        <p>Lorem ipsum <mark>Hello</mark> dolor sit amet consectetur <small>Yellow</small> adipisicing elit. <br><hr> Itaque minus, soluta libero <em>Official</em> quia quis, <pre>Lorem ipsum <i>Italic</i> dolor sit <b>Bold</b> amet <strong>Strong</strong> consectetur adipisicing elit. <del>Del</del> Tempore accusantium <ins>Hello</ins> suscipit sapiente <br> quis <u>Underline</u> dolorem possimus sint, <sub>Sub tag</sub> repudiandae sunt rerum eum eligendi <br> non aliquam exercitationem sit earum, debitis maiores inventore animi!</pre> laudantium, dolor alias consectetur placeat similique et. At inventore soluta odit, rerum ipsa autem voluptatum vel!</p>
+        <abbr title="hello">Hello</abbr>
+        <address>Phase 5</address>
+        <bdo dir="rtl">Hello</bdo>
+        <cite>My</cite>
+        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ea a recusandae nulla maxime. Ipsa a id hic unde repellat molestias nisi explicabo, corporis error dignissimos ex dolorum minima consectetur.</blockquote>
+        <button>Click Me</button>
+    </div>
+    <div class="list">
+        <ol type="I">
+            <li>Raman</li>
+            <li>Naman</li>
+            <li>Daman</li>
+        </ol>
+        <ul type="circle">
+            <li>Raman</li>
+            <li>Naman</li>
+            <li>Daman</li>
+        </ul>
+        <dl>
+            <dt>Html</dt>
+            <dd>It is a hypertext markup language.</dd>
+        </dl>
+    </div>
+    <div class="table">
+        <table border="2">
+            <thead>
+                <th>S.No.</th>
+                <th>Name</th>
+                <th>Marks</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>Raman</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Naman</td>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Daman</td>
+                    <td>60</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="form">
+        <form action="">
+            <fieldset>
+                <legend>Form Tag</legend>
+                <label for="name">Enter Your Name</label>
+                <input type="text" id="name"><br>
+                <label for="email">Enter Your Email</label>
+                <input type="email" name="" id="email"><br>
+                <label for="checkbox">Checkbox</label>
+                <input type="checkbox" name="" id="checkbox"><br>
+                <label for="color">Choose A Color</label>
+                <input type="color" name="" id="color"><br>
+                <label for="date">Choose A Date</label>
+                <input type="date" name="" id="date"><br>
+                <label for="datetime">Choose Date And Time</label>
+                <input type="datetime" name="" id="datetime"><br>
+                <label for="file">Choose A File</label>
+                <input type="file" name="" id="file"><br>
+                <label for="month">Choose A Month</label>
+                <input type="month" name="" id="month"><br>
+                <label for="number">Choose A Number</label>
+                <input type="number" name="" id="number"><br>
+                <label for="pass">Set A Password</label>
+                <input type="password" name="" id="pass"><br>
+                <label for="radio">Radio</label>
+                <input type="radio" name="" id="radio"><br>
+                <label for="range">Set A Value</label>
+                <input type="range" name="" id="range"><br>
+                <label for="tele">Enter Your Phone Number</label>
+                <input type="tel" name="" id="tele"><br>
+                <label for="time">Choose Time</label>
+                <input type="time" name="" id="time"><br>
+                <label for="search">Search Anything</label>
+                <input type="search" name="" id="search"><br>
+                <label for="url">Paste Any URL</label>
+                <input type="url" name="" id="url"><br>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </fieldset>
+        </form>
+    </div>
+    <div class="flexbox">
+        <div class="cont1">Cont1</div>
+        <div class="cont2">Cont2</div>
+        <div class="cont3">Cont3</div>
+        <div class="cont4">Cont4</div>
+        <div class="cont5">Cont5</div>
+        <div class="cont6">Cont6</div>
+    </div>
+    <div class="grid">
+        <div class="conta1">Conta1</div>
+        <div class="conta2">Conta2</div>
+        <div class="conta3">Conta3</div>
+        <div class="conta4">Conta4</div>
+        <div class="conta5">Conta5</div>
+        <div class="conta6">Conta6</div>
+    </div>
+    <div class="transform transition">
+        <div id="item" class="contain1">TranslateX</div>
+        <div id="item" class="contain2">TranslateY</div>
+        <div id="item" class="contain3">TranslateZ</div>
+        <div id="item" class="contain4">ScaleX</div>
+        <div id="item" class="contain5">ScaleY</div>
+        <div id="item" class="contain6">Scale</div>
+        <div id="item" class="contain7">RotateX</div>
+        <div id="item" class="contain8">RotateY</div>
+        <div id="item" class="contain9">RotateZ</div>
+    </div>
+</body>
+</html>
