@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3/2/2026</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: cadetblue;
+        }
+        .container{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            position: relative;
+            /* animation-name: code;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            animation-iteration-count: 3;
+            animation-timing-function: linear;
+            animation-direction: normal;
+            animation-fill-mode: both; */
+            animation-name: move;
+            animation-duration: 15s;
+            animation-delay: 2s;
+            animation-iteration-count: 2;
+            animation-timing-function: ease-in;
+            animation-direction: normal;
+        }
+
+        /* @keyframes code {
+            from {
+                top: 0;
+                left: 0;
+            }
+            to{
+                top: 500px;
+                left: 100px;
+            }
+        } */
+
+
+        @keyframes move{
+            0%{
+                top: 0;
+                left: 0;
+            }
+            10%{
+                top: 450px;
+                left: 300px;
+            }
+            20%{
+                top: 0;
+                left: 600px;
+            }
+            30%{
+                top: 450px;
+                left: 300px;
+            }
+            40%{
+                top: 0;
+                left: 400px;
+            }
+            50%{
+                top: 500px;
+                left: 500px;
+            }
+            70%{
+                top: 0;
+                left: 700px;
+            }
+            80%{
+                top: 500px;
+                left: 700px;
+            }
+            25%{
+                top: 0;
+                left: 900px;
+            }
+
+            50%{
+                top: 450px;
+                left: 900px;
+            }
+            75%{
+                top: 450px;
+                left: 0;
+            }
+            100%{
+                top: 0;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        this is container
+    </div>
+</body>
+</html>
