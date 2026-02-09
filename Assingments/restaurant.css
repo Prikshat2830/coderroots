@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Story+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;padding: 0;
+}
+body{
+    background-color: white;
+    height: 100vh;
+}
+
+header{
+    background-image: url(/Assingments/images/main.jpg);
+    background-size: cover;
+    color: white;
+    height: 600px;
+    text-align: center;
+    
+    .text{
+        padding: 220px;
+
+        h1{
+            font-family: "Great Vibes", cursive;
+            font-size: 70px;
+            margin-bottom: 10px;
+        }
+
+        p{
+            font-family: "Viaoda Libre", serif;
+            margin-bottom: 20px;
+            span{
+                visibility: hidden;
+            }
+        }
+
+        button{
+            padding: 12px;
+            width: 150px;
+            margin-right: 20px;
+            margin-left: 20px;
+            font-family: "Old Standard TT", serif;
+            cursor: pointer;
+            transition: transform ease 0.3s;
+        }
+
+        .view{
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            transition: all ease 0.3s;
+        }
+        .view:hover{
+            background-color: rgba(0, 0, 0, 0.422);
+        }
+
+        button:hover{
+            transform: scale(1.1);
+        }
+
+        .book{
+            background-color: rgb(210, 93, 30);
+            border: 2px solid white;
+            color: white;
+            transition: all ease 0.3s;
+        }
+        .book:hover{
+            background-color: rgb(222, 86, 14);
+        }
+    }
+}
+
+
+main{
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+
+    h2{
+        font-family: "Great Vibes", cursive;
+        font-size: 35px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+
+    p{
+        font-family: "Viaoda Libre", serif;
+        margin-bottom: 15px;
+    }
+
+    .cards{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 40px;
+        
+
+        .card{
+            border: 2px solid rgb(177, 176, 176);
+            cursor: pointer;
+            transition: all ease 0.3s;
+
+            
+
+            img{
+                height: 200px;
+                width: 300px;
+            }
+
+            .text{
+                text-align: start;
+                margin-left: 5px;
+                margin-top: 10px;
+            }
+
+            .price{
+                color: rgb(255, 149, 0);
+                font-weight: bold;
+            }
+        }
+
+        .card:hover{
+                transform: scale(1.1);
+            }
+    }
+}
+
+.about{
+    display: flex;
+
+    .info{
+        padding: 20px;
+
+        p{
+            text-align: start;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        img{
+            height: 270px;
+            width: 420px;
+            border-radius: 15px;
+        }
+    }
+
+
+    .image{
+        margin-left: 40px;
+        img{
+            height: 500px;
+            width: 800px;
+        }
+    }
+}
+
+
+footer{
+    background-image: url(/Assingments/images/foot.jpeg);
+    height: 200px;
+    color: white;
+
+    .item{
+        padding: 20px;
+
+        .foot{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+        }
+
+        .book{
+
+            .form{
+                input{
+                    padding: 10px;
+                    background-color: rgb(95, 36, 4);
+                    border: none;
+                    border-radius: 5px;
+                    margin-right: 5px;
+                    margin-left: 5px;
+                    transition: all ease 0.3s;
+                }
+
+                input:focus{
+                    background-color: rgb(146, 54, 5);
+                    color: white;
+                }
+            }
+
+            button{
+                margin-top: 15px;
+                margin-bottom: -10px;
+                margin-left: 200px;
+                padding: 10px;
+                width: 190px;
+                border: none;
+                border-radius: 10px;
+                background-color: rgb(210, 93, 30);
+                color: white;
+                font-family: "Viaoda Libre", serif;
+                font-size: large;
+                font-style: italic;
+                font-weight: bold;
+                transition: all ease 0.3s;
+
+                span{
+                    visibility: hidden;
+                }
+            }
+
+            button:hover{
+                transform: scale(1.1);
+                background-color: rgb(222, 86, 14);
+            }
+        }
+    }
+
+    h2, h4{
+        text-align: center;
+    }
+
+    h2{
+        font-family: "Great Vibes", cursive;
+        font-size: 25px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    .add{
+        margin-bottom: 5px;
+    }
+}
+
+
+/* ================= MOBILE (0px – 767px) ================= */
+@media (max-width: 767px) {
+
+    header {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    header .text {
+        padding: 0;
+    }
+
+    header .text h1 {
+        font-size: 40px;
+    }
+
+    header .text p {
+        font-size: 14px;
+    }
+
+    header .text button {
+        width: 120px;
+        margin: 10px 5px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about .image {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .about .image img,
+    .about .info img {
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        height: auto;
+        padding: 30px 15px;
+    }
+
+    .foot {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .book button {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+
+/* ================= TABLET (768px – 1024px) ================= */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    header .text h1 {
+        font-size: 55px;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about .image img,
+    .about .info img {
+        width: 90%;
+        height: auto;
+    }
+
+    .foot {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .book button {
+        width: 250px;
+        margin-left: 0;
+    }
+}
+
+
+/* ================= LAPTOP (1025px and above) ================= */
+@media (min-width: 1025px) {
+
+    header {
+        height: 600px;
+    }
+
+    header .text h1 {
+        font-size: 70px;
+    }
+
+    /* Cards layout */
+    .cards {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card {
+        width: 23%;
+    }
+
+    /* About section fix */
+    .about {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .about .info {
+        flex: 1;
+    }
+
+    .about .image {
+        flex: 1.2;
+        margin-left: 0;
+    }
+
+    .about .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about .info img {
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+    }
+
+    /* Footer button */
+    .book button {
+        margin-left: 0;
+    }
+}
