@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    height: 100vh;
+    
+}
+.parent{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(225, 225, 225);
+    
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+    .image{
+        height: 60px;
+        width: 60px;
+        margin-left: 100px;
+    }
+    .links{
+        margin-left: 750px;
+    }
+
+    .nav{
+        background-color: #fff;
+    }
+}
+
+
+/* main */
+
+.sec1{
+
+    img{
+        height: 730px;
+        width: 100%;
+    }
+
+    h5{
+        color: black;
+    }
+}
+
+.sec2{
+    margin: 60px;
+
+    .cards{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px;
+
+        .card{
+            width: 350px;
+        }
+
+        h5{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+
+            span{
+                font-weight: bolder;
+            }
+        }
+    }
+}
+
+.sec3{
+    background-color: #b0b200;
+    padding:35px;
+
+    h3{
+        margin: 0px 20px 30px 40px;
+        padding: 5px 0 0 0;
+        font-weight: bolder;
+    }
+
+    .menu{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+
+        .card{
+            border-radius: 25px;
+        }
+
+        img{
+            border-radius: 25px 25px 0 0;
+        }
+
+        p{
+            font-weight: bolder;
+        }
+    }
+
+    .menu2{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+
+        .card{
+            border-radius: 25px;
+        }
+
+        img{
+            border-radius: 25px 25px 0 0;
+        }
+
+        p{
+            font-weight: bolder;
+        }
+    }
+}
+
+.sec4{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+
+    .pic{
+        img{
+            height: 350px;
+            border: none;
+            border-radius: 20px;
+            width: 500px;
+        }
+    }
+
+    .desc{
+        margin-left: 150px;
+
+        h3{
+            font-weight: bolder;
+        }
+
+        .btn{
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(to bottom, #c3c602, #8c8e01);
+            height: 50px;
+            width: 150px;
+            color: white;
+            font-weight: bold;
+        }
+    }
+}
+
+.sec5{
+    display: flex;
+    padding: 65px;
+    background-color: #dadada5f;
+
+    .del{
+        margin-right: 150px;
+
+        h3{
+            font-weight: bolder;
+        }
+        
+        button{
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(to bottom, #c3c602, #8c8e01);
+            height: 50px;
+            width: 150px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .options{
+            display: flex;
+            
+
+            img{
+                height: 50px;
+                width: 50px;
+                margin: 0 10px 0 10px;
+                border-radius: 15px;
+                margin-top: 50px;
+                cursor: pointer;
+                transition: all ease 0.4s;
+            }
+
+            img:hover{
+                transform: scale(1.1);
+                box-shadow: 5px 5px 15px #c3c602;
+            }
+        }
+    }
+
+    .pay{
+        margin-bottom: 25px;
+        img{
+            height: 350px;
+            width: 500px;
+            border: none;
+            border-radius: 20px;
+        }
+    }
+}
+
+.sec6{
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to bottom, rgba(244, 80, 80, 0.611), rgba(194, 1, 1, 0.501));
+    padding: 35px;
+
+    .thank{
+        h2{
+            font-weight: bolder;
+        }
+        button{
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(to bottom, #c3c602, #8c8e01);
+            height: 50px;
+            width: 150px;
+            color: white;
+            font-weight: bold;
+        }
+        
+    }
+
+    .customer{
+        img{
+            height: 250px;
+            width: 400px;
+        }
+    }
+}
+
+.sec7{
+    text-align: center;
+    padding: 35px;
+
+    .icons{
+        display: flex;
+        justify-content: center;
+        
+        p{
+            padding: 10px 15px 10px 15px;
+            margin: 0 10px 0 10px;
+            border-radius: 100%;
+            background-color: rgba(224, 5, 5, 0.277);
+        }
+    }
+}
+
+footer{
+    text-align: center;
+    background-color: #b0b200;
+    padding: 35px;
+
+    img{
+        height: 100px;
+        width: 100px;
+        margin-bottom: 20px;
+    }
+
+    .email{
+        font-weight: bolder;
+    }
+}
