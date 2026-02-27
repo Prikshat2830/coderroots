@@ -30,7 +30,7 @@
 // const name = document.getElementById("nme")
 
 // name.addEventListener("input", function(e){
-//     // e.target.value = e.target.value.toUpperCase()
+//     e.target.value = e.target.value.toUpperCase()
 //     console.log(name.value)
 // })
 

@@ -6,7 +6,7 @@
 // console.log(a.toUpperCase())
 // console.log(a.toLowerCase())
 // console.log(a.charAt(6))
-// console.log(a.includes("is"))
+// console.log(a.includes("IS"))
 // console.log(a.indexOf("HERE"))
 // console.log(a.slice(5,16))
 // console.log(a.replace("NOBODY","SOMEBODY"))
