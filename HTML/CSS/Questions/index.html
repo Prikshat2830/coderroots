@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+</head>
+<body>
+    <h2>Q.5: JS code for nested array to single array.</h2>
+    <p id="nest">NESTED ARRAY: [1,2,[3,4],[5,6],7]</p>
+    <p id="ans5">ANS: </p>
+    <h2>Q.6: Diff. b/w let,const and var</h2>
+    <p>ANS: LET- let variable is a block scope. It can be updated but can't be redeclared. In let hoisting can not be initialized. <br> CONST- const variable is also a block scope. But it cannot be redeclared and update. <br> VAR- var variable is a funtion scope. It can be redeclared and also be updated. Hoisting is initialized in var.</p>
+    <h2>Q.7: Hoisting and where is possible?</h2>
+    <p>ANS: Hoisting is that when javascript moves the declaration to the top of the scope before execution. Hoisting is done in all the variables (let,const,var). In var is hoisted and is initialized with undefined, whereas the let and const variable are also hoisted but cannot be initialized.</p>
+    <h2>Q.8: What is event bubbling and how it is prevent can you explain with an example?</h2>
+    <p>ANS: Event bubbling is a event in which the functions or alerts when clicked to the child function and it deploys automatically the child and parent function. To stop it, we use e.stopPropagation(). <br></p>
+    <h2>Q.9: Quantifier and how many types of quantifier?</h2>
+    <p>ANS: </p>
+    <h2>Q.10: Execution context</h2>
+    <p>ANS: </p>
+    <h2>Q.11: Local, session and cookies</h2>
+    <p>ANS: </p>
+    <h2>Q.12: Async execution</h2>
+    <p>ANS: </p>
+    <h2>Q.15: Spread Operation and Rest Operation</h2>
+    <p>ANS: </p>
+    <h2>Q.16: </h2>
+    <p>ANS: </p>
+    <h2>Q.17: Meaning of declaration</h2>
+    <p>ANS: </p>
+
+    <script>
+        const nested = [1, 2, [3, 4], [5, 6], 7]
+
+        const single = nested.flat()
+        const Ans5 = document.getElementById("ans5")
+
+        Ans5.textContent += single
+
+        // console.log(single)
+    </script>
+</body>
+</html>

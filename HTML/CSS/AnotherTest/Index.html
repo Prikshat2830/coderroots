@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="Index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <div class="cards">
+        <div class="card" id="card1" style="width: 18rem;">
+            <img src="./img/web.jpg" class="card-img-top cir" alt="...">
+        <div class="card-body">
+            <h5 class="card-title tit">Web Development</h5>
+            <p class="card-text desc">Web development is the process of creating and maintaining websites and web applications that run on the internet. It involves designing user interfaces, developing functionality using programming languages, and ensuring that websites are responsive, fast, and accessible across different devices. Web developers work with technologies such as HTML, CSS, JavaScript, and various frameworks to build interactive and efficient digital platforms.</p>
+            <a href="#" class="btn btn-primary">Follow</a>
+        </div>
+        </div>
+        <div class="card" id="card2" style="width: 18rem;">
+            <img src="./img/content.jpg" class="card-img-top cir" alt="...">
+        <div class="card-body">
+            <h5 class="card-title tit">Content Creator</h5>
+            <p class="card-text desc">A content creator is someone who produces digital material for online platforms such as social media, websites, blogs, or video channels. This content can include videos, articles, images, podcasts, and other forms of media designed to inform, entertain, or engage an audience. Content creators focus on creativity, storytelling, and understanding audience interests to deliver valuable and engaging content.</p>
+            <a href="#" class="btn btn-primary">Follow</a>
+        </div>
+        </div>
+        <div class="card" id="card3" style="width: 18rem;">
+            <img src="./img/python.jpg" class="card-img-top cir" alt="...">
+        <div class="card-body">
+            <h5 class="card-title tit">Python Programmer</h5>
+            <p class="card-text desc">A Python programmer is a developer who uses the Python programming language to build software, automate tasks, and solve technical problems. Python is widely used in areas such as web development, data science, artificial intelligence, and automation because of its simplicity and powerful libraries. Python programmers write efficient and maintainable code to develop applications and perform complex computational tasks.</p>
+            <a href="#" class="btn btn-primary">Follow</a>
+        </div>
+        </div>
+        <div class="card" id="card4" style="width: 18rem;">
+            <img src="./img/data.jpg" class="card-img-top cir" alt="...">
+        <div class="card-body">
+            <h5 class="card-title tit">Data Analysist</h5>
+            <p class="card-text desc">A data analyst is a professional who collects, processes, and interprets data to help organizations make informed decisions. They use statistical methods, data visualization tools, and analytical techniques to identify patterns and trends within datasets. By transforming raw data into meaningful insights, data analysts support strategic planning and improve business performance.</p>
+            <a href="#" class="btn btn-primary">Follow</a>
+        </div>
+        </div>
+    </div>
+    <button id="button">Change color</button>
+
+    <script>
+        const card1 = document.getElementById("card1")
+        const card2 = document.getElementById("card2")
+        const card3 = document.getElementById("card3")
+        const card4 = document.getElementById("card4")
+        const btn = document.getElementById("button")
+
+        btn,addEventListener("click",function(){
+            card1.style.backgroundColor = "blue"
+            card1.style.color = "white"
+            card2.style.backgroundColor = "blue"
+            card2.style.color = "white"
+            card3.style.backgroundColor = "blue"
+            card3.style.color = "white"
+            card4.style.backgroundColor = "blue"
+            card4.style.color = "white"
+        })
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

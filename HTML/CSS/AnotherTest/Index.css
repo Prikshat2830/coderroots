@@ -1,0 +1,30 @@
+.cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+
+    .cir{
+        border-radius: 50%;
+        height: 270px;
+    }
+
+    .tit{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .desc{
+        font-size: 12px;
+        text-align: justify;
+        font-weight: 400;
+    }
+}
+
+button{
+    padding: 10px;
+    width: 200px;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}

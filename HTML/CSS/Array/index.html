@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <p id="large">Largest Number: </p>
+    <p id="small">Smallest Number: </p>
+    <p id="even">Even Number: </p>
+    <p id="large2">Largest Number: </p>
+    <p id="small2">Smallest Number: </p>
+    <p id="even2">Even Number: </p>
+
+    <script>
+        const number = [10, 5, 8, 20, 3, 7]
+        //another array
+        const array = [50,78,12,95,135,494,135,876,45,213,654,486,16]
+        
+        const largest = Math.max(...number)
+        const large = Math.max(...array)
+
+        const smallest = Math.min(...number)
+        const small = Math.min(...array)
+
+        const evenNumbers = number.filter(n => n % 2 === 0)
+        const evenNumber = array.filter(n => n % 2 === 0)
+
+        const big1 = document.getElementById("large")
+        const big2 = document.getElementById("large2")
+        const small1 = document.getElementById("small")
+        const small2 = document.getElementById("small2")
+        const even1 = document.getElementById("even")
+        const even2 = document.getElementById("even2")
+
+        big1.textContent += largest
+        big2.textContent += large
+        small1.textContent += smallest
+        small2.textContent += small
+        even1.textContent += evenNumbers
+        even2.textContent += evenNumber
+    </script>
+</body>
+</html>
