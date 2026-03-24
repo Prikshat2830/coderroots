@@ -139,4 +139,93 @@ let naame:Naam = {
 
 console.log(naame);
 
+// ANY
+
+let naam:any
+// naam = "Prikshat"
+naam = 52
+
+console.log(typeof(naam));
+
+// unknown
+
+let value:unknown
+value = 10
+// value = "Prikshat"
+
+console.log(typeof(value));
+
+
+function checkValue (a:string|number|boolean){
+    if(typeof a === "string"){
+        console.log("this is string");
+    }else if(typeof a === "number"){
+        console.log("this is number");
+    }else if(typeof a === "boolean"){
+        console.log("this is boolean");
+    }else{
+        console.log("this is unknown");
+    }
+}
+
+checkValue("kd")
+checkValue(10)
+checkValue(true)
+
+// force fully assertion
+
+let data:unknown
+data = 10
+let length = (data as string).length
+
+console.log(length);
+
+// void
+
+function getValue(a:number,b:number):void{
+    console.log("hello");
+    // return a + b
+}
+
+getValue(3,4)
+
+// never
+
+// function getSum(a:number,b:number):never{
+//     // return a+b
+//     // console.log("onh");
+    
+// }
+
+// console.log(getSum(4,4));
+
+// literal type
+
+let k:20 = 20
+
+console.log(k);
+
+// enum
+
+enum Status {
+    pending = 1,
+    complete,
+    rejected
+}
+
+let status:Status = Status.rejected
+
+console.log(status);
+
+// generic
+
+function identify<T> (value: T):T {
+    return value
+}
+
+let f = identify<string>("kosk")
+
+console.log(f);
+
+
 
